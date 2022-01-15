@@ -6,12 +6,13 @@ inputs.forEach((inp) => {
   inp.addEventListener("click", (e) => {
     text = e.target.value;
     console.log(text);
+
     if (text == "AC"){
         screenValue = " ";
         answer.value = screenValue;
     } 
     else if(text == "=") {
-        answer.value = eval(screenValue)
+      answer.value = eval(screenValue)
     }
     else if( text == "DEL"){
         answer.value = answer.value.substr(0, answer.value.length-1)
